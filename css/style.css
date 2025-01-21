@@ -74,3 +74,14 @@ h1 {
     text-align: center;
     margin-top: 100px;
 }
+
+@media screen and (max-width: 756px) {
+    form {
+        width: 80%;
+    }
+
+    body {
+        padding: 20px;
+    }
+    
+}
