@@ -14,7 +14,7 @@ function comprobarForm(event) {
         event.preventDefault();
         error.innerText="El campo de introducción de número no puede estar vacío";
         return false;
-    } else if(NaN(amount)) {
+    } else if(isNaN(amount.value)) {
         amountInput.focus();
         event.preventDefault();
         error.innerText="Por favor introduce un número válido";
@@ -32,9 +32,9 @@ function comprobarForm(event) {
 //Función para convertir el número introducido en euros a dólares, yenes y libras//
 function convertir() {
     const tasaCambio = {
-        dolar: 1.1,  // Tasa ejemplo 1 EUR = 1.1 USD
-        yen: 146,    // Tasa ejemplo 1 EUR = 146 JPY
-        libra: 0.85  // Tasa ejemplo 1 EUR = 0.85 GBP
+        dolar: 0.96,  
+        yen: 162.14,    
+        libra: 1.18,  
     };
 
     const euros = parseFloat(document.getElementById("amount").value) || 0;
@@ -71,4 +71,6 @@ resetButton.addEventListener("click", reset);
 form.addEventListener('submit', preventDefault);
 //Fin carga de eventos//
 resetButton.addEventListener("click", preventDefault);
+
+
 
