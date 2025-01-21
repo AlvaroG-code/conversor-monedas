@@ -39,9 +39,9 @@ function convertir() {
 
     const euros = parseFloat(document.getElementById("amount").value) || 0;
     
-    document.getElementById("usd").value = (euros * tasaCambio.dolar).toFixed(2);
-    document.getElementById("jpy").value = (euros * tasaCambio.yen).toFixed(2); 
-    document.getElementById("gbp").value = (euros * tasaCambio.libra).toFixed(2);
+    document.getElementById("usd").value = (euros * tasaCambio.dolar).toFixed(2) + " $";
+    document.getElementById("jpy").value = (euros * tasaCambio.yen).toFixed(2) + " ¥"; 
+    document.getElementById("gbp").value = (euros * tasaCambio.libra).toFixed(2) + " £";
     console.log("USD:" ,euros * tasaCambio.dolar.toFixed(2))
     console.log("JPY:" ,euros * tasaCambio.yen.toFixed(2))
     console.log("Libra:" ,euros * tasaCambio.libra.toFixed(2))
