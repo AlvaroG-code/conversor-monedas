@@ -1,0 +1,76 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    align-items: center;
+}
+
+input {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+#converter {
+    background-color: #540cfd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#reset {
+    background-color: #fd0c49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff4f6d;
+}
+
+button[type="submit"]:active {
+    background-color: #f00;
+}
+
+
+#jpy {
+    margin-left: 6px;
+}
+
+#error {
+    color: red;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
